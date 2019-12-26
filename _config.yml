@@ -1,6 +1,6 @@
 ############################### 基本信息 ###############################
 info:
-  name: Material X
+  name: 'material-x'
   docs: https://xaoxuu.com/wiki/material-x/
   cdn: # 把对应的那一行注释掉就使用本地的文件
     css:
@@ -32,13 +32,13 @@ music:
   color: '#1BCDFC'  # 主题色
   mode: circulation # random （随机） single （单曲） circulation （列表循环） order （列表）
   server: netease   # netease（网易云音乐）tencent（QQ音乐） xiami（虾米） kugou（酷狗）
-  type: playlist    # song （单曲） album （专辑） playlist （歌单） search （搜索）
-  id: 2615636388    # 歌曲/专辑/歌单 ID
+  type: playlist      # song （单曲） album （专辑） playlist （歌单） search （搜索）
+  id: 2615636388    # 歌曲/专辑/歌单 ID 2615636388
   volume: 0.7       # 音量, 0~1
   autoplay: false   # 自动播放
 
 # 友链页头像占位图
-avatar_placeholder: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png
+avatar_placeholder: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1566989685462&di=31f5b9f85e870563ef23d1229da8227f&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201211%2F04%2F20121104120256_vKHAX.thumb.1000_0.jpeg
 
 # 日期格式 http://momentjs.com/docs/
 date_format: 'YYYY-MM-DD' # 文章发布日期的格式
@@ -50,7 +50,7 @@ backstretch:
   duration: 6000 # 持续时间（毫秒）
   fade: 2500     # 渐变（毫秒）
   images:
-    - https://img.vim-cn.com/6d/a0c9e6f9efad8b731cb7376504bd10d79d2053.jpg
+    - https://s2.ax1x.com/2019/09/19/nqVpMd.jpg
 
 
 
@@ -59,7 +59,7 @@ backstretch:
 cover:
   scheme: search    # 后期将会提供多种封面方案
   # height: half      # full（默认值）: 首页封面占据整个第一屏幕，其他页面占半个屏幕高度， half: 所有页面都封面都只占半个屏幕高度
-  title: "Material X"
+  title: "Eighteen Blog"
   # logo: assets/logo.png    # logo和title只显示一个，若同时设置，则只显示logo
   # search_placeholder: '搜索'
   # 主页封面菜单
@@ -67,13 +67,13 @@ cover:
     - name: 博文
       icon: fas fa-rss
       url: /
-    - name: 项目
-      icon: fas fa-code-branch
-      url: projects/
-    - name: 友链
-      icon: fas fa-link
-      url: friends/
-      rel: nofollow
+    # - name: 项目
+    #   icon: fas fa-code-branch
+    #   url: projects/
+    # - name: 友链
+    #   icon: fas fa-link
+    #   url: friends/
+    #   rel: nofollow
     - name: 关于
       icon: fas fa-info-circle
       url: about/
@@ -82,20 +82,24 @@ cover:
 
 # 桌面端导航栏菜单
 menu_desktop:
-  - name: 示例
+  - name: 文章
     icon: fas fa-grin
     url: /
   - name: 分类
     icon: fas fa-folder-open
-    url: blog/categories/
+    url: categories/
     rel: nofollow
   - name: 标签
     icon: fas fa-hashtag
-    url: blog/tags/
+    url: tags/
     rel: nofollow
   - name: 归档
     icon: fas fa-archive
-    url: blog/archives/
+    url: archives/
+    rel: nofollow
+  - name: Demo
+    icon: fas fa-book
+    url: demo/
     rel: nofollow
 
 # 手机端导航菜单（从右上角的按钮点击展开）
@@ -105,23 +109,28 @@ menu_mobile:
     url: /
   - name: 文章归档
     icon: fas fa-archive
-    url: blog/archives/
+    url: archives/
     rel: nofollow
-  - name: 开源项目
-    icon: fas fa-code-branch
-    url: projects/
-  - name: 我的友链
-    icon: fas fa-link
-    url: friends/
-    rel: nofollow
-  - name: 主题文档
+  - name: Demo
     icon: fas fa-book
-    url: https://xaoxuu.com/wiki/material-x/
+    url: demo/
     rel: nofollow
   - name: 关于小站
     icon: fas fa-info-circle
     url: about/
     rel: nofollow
+  # - name: 开源项目
+  #   icon: fas fa-code-branch
+  #   url: projects/
+  # - name: 我的友链
+  #   icon: fas fa-link
+  #   url: friends/
+  #   rel: nofollow
+  # - name: 主题文档
+  #   icon: fas fa-book
+  #   url: https://xaoxuu.com/wiki/material-x/
+  #   rel: nofollow
+
 
 # 默认的meta信息，文章中没有配置则按照这里的配置来显示，设置为false则不显示
 # 其中，title只在header中有效，music和thumbnail无需在这里设置，文章中有则显示
@@ -136,7 +145,7 @@ body: [article, comments]
 # 侧边栏小部件，默认按下面给定的顺序全部显示，文章中还可以自定义显示一部分以及顺序
 sidebar:
   - widget: author
-    avatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png
+    avatar: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1566989685462&di=31f5b9f85e870563ef23d1229da8227f&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201211%2F04%2F20121104120256_vKHAX.thumb.1000_0.jpeg
     social: true
   - widget: toc
   - widget: grid
@@ -148,33 +157,37 @@ sidebar:
         url: /
       - name: 文章归档
         icon: fas fa-archive
-        url: blog/archives/
+        url: archives/
         rel: nofollow
-      - name: 开源项目
-        icon: fas fa-code-branch
-        url: projects/
-      - name: 我的友链
-        icon: fas fa-link
-        url: friends/
-        rel: nofollow
-      - name: 主题文档
+      - name: Demo
         icon: fas fa-book
-        url: https://xaoxuu.com/wiki/material-x/
+        url: demo/
         rel: nofollow
       - name: 关于小站
         icon: fas fa-info-circle
         url: about/
         rel: nofollow
+      # - name: 开源项目
+      #   icon: fas fa-code-branch
+      #   url: projects/
+      # - name: 我的友链
+      #   icon: fas fa-link
+      #   url: friends/
+      #   rel: nofollow
+      # - name: 主题文档
+      #   icon: fas fa-book
+      #   url: https://xaoxuu.com/wiki/material-x/
+      #   rel: nofollow
   - widget: category
     more:
       icon: fas fa-expand-arrows-alt
-      url: blog/categories/
+      url: categories/
       rel: nofollow
   - widget: tagcloud
     icon: fas fa-fire
     more:
       icon: fas fa-expand-arrows-alt
-      url: blog/tags/
+      url: tags/
       rel: nofollow
   # - widget: related_posts # 需要安装插件  npm i -S hexo-related-popular-posts
   - widget: music
@@ -182,24 +195,24 @@ sidebar:
     title: "最近在听"
     more:
       icon: far fa-heart
-      url: https://music.163.com/#/user/home?id=63035382
+      url: https://music.163.com/#/user/songs/rank?id=382209257
       rel: external nofollow noopener noreferrer
       target: _blank
     server: netease   # netease（网易云音乐）tencent（QQ音乐） xiami（虾米） kugou（酷狗）
-    type: playlist    # song （单曲） album （专辑） playlist （歌单） search （搜索）
-    id: 2615636388     # 歌曲/专辑/歌单 ID
+    type: playlist    # song （单曲） album （专辑） playlist （歌单） search （搜索） user/songs/rank （最近）
+    id: 541812888    # 歌曲/专辑/歌单 ID 2615636388
 
 
 # 社交信息
 social:
   - icon: fas fa-rss
-    url: atom.xml
+    url: /atom.xml
   - icon: fas fa-envelope
-    url: mailto:me@xaoxuu.com
+    url: mailto:aqshaofei@vip.qq.com
   - icon: fab fa-github
-    url: https://github.com/xaoxuu
+    url: https://github.com/lunhui1994
   - icon: fas fa-headphones-alt
-    url: https://music.163.com/#/user/home?id=63035382
+    url: https://music.163.com/#/user/home?id=382209257
 
 
 # 分享按钮
@@ -211,15 +224,15 @@ share:
   - id: qzone
     name: QQ空间
     img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png
-  # - id: qrcode
-  #   name: 微信
-  #   img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png
+  - id: qrcode
+    name: 微信
+    img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png
   - id: weibo
     name: 微博
     img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png
-  # - id: qrcode
-  #   name: QRcode
-  #   img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qrcode.png
+  - id: qrcode
+    name: QRcode
+    img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qrcode.png
 
 
 
@@ -279,3 +292,9 @@ search:
 # Less渲染
 less:
   compress: true
+
+# cnzz
+cnzz: true
+
+# rss
+rss: /atom.xml
