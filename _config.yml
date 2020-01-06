@@ -2,6 +2,8 @@
 info:
   name: 'material-x'
   docs: https://xaoxuu.com/wiki/material-x/
+  icp: 京ICP备18047643号
+  copyright: © 2020 赵少飞
   cdn: # 把对应的那一行注释掉就使用本地的文件
     css:
       style: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.5/css/style.css
@@ -167,6 +169,9 @@ sidebar:
         icon: fas fa-info-circle
         url: about/
         rel: nofollow
+      - name: 我的友链
+        icon: fas fa-link
+        url: http://tiny.zsfmyz.top
       # - name: 开源项目
       #   icon: fas fa-code-branch
       #   url: projects/
