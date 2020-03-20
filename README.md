@@ -13,7 +13,7 @@
 
 本项目对原主题进行了一系列插件的安装相关插件安装步骤请看
 
-[Hexo搭建配置总结]("http://zsfmyz.top/Hexo/Hexo%E6%90%AD%E5%BB%BA%E9%85%8D%E7%BD%AE%E6%80%BB%E7%BB%93/")
+> [Hexo搭建配置总结](http://zsfmyz.top/Hexo/Hexo%E6%90%AD%E5%BB%BA%E9%85%8D%E7%BD%AE%E6%80%BB%E7%BB%93/)
 
 1. Hexo 添加Favicon
 2. Hexo 添加百度统计
@@ -22,4 +22,4 @@
 5. Hexo 网站地图
 6. Hexo 评论系统 gitalk
 7. 常见问题
-  1. Hexo deploy 报错
+   1. Hexo deploy 报错
