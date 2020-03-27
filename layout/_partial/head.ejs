@@ -58,13 +58,17 @@
   <% if (config.favicon) { %>
   <link rel="shortcut icon" type='image/x-icon' href="<%- url_for(config.favicon) %>">
   <% } %>
-
+    <!-- color css -->
+    <%- css('./color/main.css') %>
+    <%- css('./color/icon.css') %>
+    
   <% if (theme.info && theme.info.cdn && theme.info.cdn.css && theme.info.cdn.css.style) { %>
     <%- css(theme.info.cdn.css.style) %>
   <% } else { %>
     <%- css('style.css') %>
   <% } %>
-
+  
+    <%- css('./css/my_main.css') %>
   <script>
     function setLoadingBarProgress(num) {
       document.getElementById('loading-bar').style.width=num+"%";
