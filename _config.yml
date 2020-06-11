@@ -169,7 +169,7 @@ sidebar:
         icon: fas fa-info-circle
         url: about/
         rel: nofollow
-      - name: 我的友链
+      - name: TinyFish
         icon: fas fa-link
         url: http://tiny.zsfmyz.top
       # - name: 开源项目
